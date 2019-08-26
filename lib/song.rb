@@ -47,7 +47,7 @@ class Song
   def self.new_from_filename(file_name)
     split_arr = file_name.split(" - ")
     artist_name = split_arr[0]
-    song_title = split_arr[1]
+    song_title = split_arr[1].gsub("")
     binding.pry 
     
     
