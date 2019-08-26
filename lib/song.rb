@@ -49,6 +49,8 @@ class Song
     artist_name = split_arr[0]
     song_title = split_arr[1].gsub(".mp3", "")
     song = create_by_name(song_title)
+    song.artist_name = artist_name
+    song
     binding.pry 
     
     
