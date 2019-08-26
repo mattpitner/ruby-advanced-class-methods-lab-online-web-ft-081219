@@ -64,12 +64,8 @@ class Song
   end 
   
   def self.create_from_filename(file_name)
-    split_arr = file_name.split(" - ")
-    artist_name = split_arr[0]
-    song_title = split_arr[1].gsub(".mp3", "")
-    song = self.create_by_name(song_title)
-    song.artist_name = artist_name
-    song
+   song = new_from_filename(file_name)
+    
   end 
   
   
