@@ -42,7 +42,10 @@ class Song
     @@all.sort_by { |song| song.name }
   end 
   
-  def new_from_filename
+  def self.new_from_filename(file_name)
+    split_arr = file_name.split 
+    
+    
     
   end 
 
