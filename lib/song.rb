@@ -48,6 +48,7 @@ class Song
     split_arr = file_name.split(" - ")
     artist_name = split_arr[0]
     song_title = split_arr[1].gsub(".mp3", "")
+    create_by_name(song_title)
     binding.pry 
     
     
