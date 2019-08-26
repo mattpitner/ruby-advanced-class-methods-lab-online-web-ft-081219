@@ -51,10 +51,6 @@ class Song
     song = create_by_name(song_title)
     song.artist_name = artist_name
     song
-    binding.pry 
-    
-    
-    
   end 
 
 end
