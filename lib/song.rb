@@ -3,7 +3,17 @@ require 'pry'
 class Song
   attr_accessor :name, :artist_name
   @@all = []
-
+  
+  def artist_name=(name)
+    @artist_name = name 
+  end 
+  
+  def name 
+    @name
+  end 
+  
+  
+  
   def self.all
     @@all
   end
