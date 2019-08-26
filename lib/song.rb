@@ -45,6 +45,8 @@ class Song
   def self.new_from_filename(file_name)
     split_arr = file_name.split(" ")
     
+    binding.pry 
+    
     
     
   end 
